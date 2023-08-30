@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Form Generator</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/preview.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/doc_icon.png">
+</head>
+
+<body>
+    <div>
+        <div class="form-title-container">
+            <img src="/images/doc_icon.png" alt="doc_icon" id="doc_logo">
+            <h1 id="form-title">Untitled Form</h1>
+            <input type="image" src="/images/edit_icon.png" id="edit-form-title">
+        </div>
+        <div class="form-container">
+            <!-- <input type="image" src="/images/eye_icon.png" id="preview-form-btn" onclick="window.location.href='preview.html'"> -->
+            <form id="dynamicForm">
+                <div class="input-field" id="input-container"></div>
+                <br />
+                <label for="inputType" class="input-type-label">Select the input type: </label>
+                <select id="inputType" name="inputType" class="selection">
+                    <option value="text">Text</option>
+                    <option value="textarea">Textarea</option>
+                    <option value="select">Dropdown</option>
+                    <option value="checkbox">Checkbox</option>
+                    <option value="radio">Radio Button</option>
+                </select>
+                <!-- <button class="removeField">-</button> -->
+            </form>
+            <button id="addField" class="dropdown-add">Add Input</button>
+        </div>
+    </div>
+    <div style="display: flex; justify-content: space-between; padding: 0% 20%;">
+        <button type="submit" form="dynamicForm" value="Submit" class="submit-btn" style="margin-left: 0%;" id="form-submit">User
+            Preview</button>
+        <button class="submit-btn" id="new-form">New Form</button>
+    </div>
+    <script src="js/new.js"></script>
+    <script src="js/onload_index.js"></script>
+</body>
+
+</html>

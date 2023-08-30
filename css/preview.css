@@ -1,0 +1,12 @@
+#preview-form-btn{
+    width: 5%;
+    margin-left: 100%;
+}
+
+#preview-form-btn:hover{
+    transform: scale(1.1);
+}
+
+#submitted-form{
+    font-family: 'Mukta', sans-serif;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/preview.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/doc_icon.png">
+    <title>Dynamic Form Preview</title>
+</head>
+<body>
+    <div>
+        <div class="form-title-container">
+            <img src="/images/doc_icon.png" alt="Form Icon" id="doc_logo">
+            <h1 id="form-title">Untitled Form</h1>
+        </div>
+        <div class="form-container">
+            <form id="dynamicForm">
+                <div class="input-field" id="input-container">
+                </div>
+            </form>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 0% 20%;">
+            <button class="submit-btn" style="margin-left: 0%;" id="user-submit" form="dynamicForm">Submit</button>
+            <button class="submit-btn" id="back">Back</button>
+        </div>
+    </div>
+
+    <script src="js/newPreview.js"></script>
+</body>
+</html>

@@ -1,0 +1,303 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.input-field{
+    display: none;
+    background-color: rgba(250, 235, 215, 0.4);
+}
+.form-title-container{
+    /* text-align: center; */
+    height: 10vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+    font-size: 2vw;
+    border-bottom: 2px solid black;
+    border-bottom-right-radius: 2vw;
+    font-family: 'Mukta', sans-serif;
+    align-items: center;
+}
+
+.form-title-text{
+    outline: none;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    background-color: transparent;
+    font-size: 3vw;
+    font-weight: bolder;
+    border-bottom: 2px solid saddlebrown;
+}
+
+#doc_logo{
+    height: 5vw;
+    width: 5vw;
+    margin-left: 3%;
+}   
+
+#edit-form-title{
+    width: 3%;
+    margin-left: 1%;
+}
+
+#edit-icon{
+    height: 18%;
+    width: 18%;
+}
+
+.form-container{
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    border-right: 10px solid antiquewhite;
+    border-left: 10px solid antiquewhite;
+    border-radius: 15px;
+    margin-top: 3%;
+    padding: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    max-width: 60%;
+}
+
+.input-field {
+    box-sizing: border-box;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    padding: 5%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding-right: 7%;
+}
+
+.input-field:hover{
+    border-bottom-color: darksalmon;
+    border-bottom-width: 5px;
+}
+
+.input-wrapper{
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    box-sizing: border-box;
+    margin-bottom: 3%;
+    padding: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.question-label{
+    font-family: 'Mukta', sans-serif;
+    margin-bottom: 1%;
+    font-size: 2vw;
+    outline: none;
+    white-space: pre-wrap;
+    line-height: 1.2;
+    width: auto;
+    word-wrap: break-word;
+}
+
+.new-form-title-text{
+    font-family: 'Mukta', sans-serif;
+    margin-bottom: 1%;
+    font-size: 2vw;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-weight: bold;
+    background-color: antiquewhite;
+    width: 80%;
+    margin-right: 20%;
+}
+
+.form-control {
+    /* border: 2px solid red; */
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    width: 80%;
+    margin-right: 2%;
+    font-family: 'Mukta', sans-serif;
+    margin-bottom: 2%;
+    margin-right: 20%;
+    margin-top: 1%;
+}
+
+.form-control:focus{
+    outline: none;
+    background-color: rgba(250, 235, 215, 0.7);
+    border-bottom: 2px solid darksalmon;
+}
+
+.option-form {
+    /* border: 2px solid red; */
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    width: 80%;
+    margin-right: 2%;
+    font-family: 'Mukta', sans-serif;
+    margin-bottom: 2%;
+    margin-right: 20%;
+    margin-top: 1%;
+}
+
+.option-form:focus{
+    outline: none;
+    background-color: rgba(250, 235, 215, 0.7);
+    border-bottom: 2px solid darksalmon;
+}
+
+.removeField{
+    background-color: rgb(202, 10, 10);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bolder;
+    padding: 5px 10px;
+    transition: transform 0.3s;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 2%;
+    font-size: 1.1vw;
+}
+
+.removeField:hover{
+    transform: scale(1.1);
+}
+
+.dropdown-add {
+    background-color: rgb(42, 180, 42);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bolder;
+    padding: 5px 10px;
+    transition: transform 0.3s;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 2%;
+    font-size: 1.1vw;
+}
+
+.dropdown-add:hover {
+    transform: scale(1.1);
+}
+
+
+.selection{
+    width: 60%;
+    outline: none;
+    font-family: 'Mukta', sans-serif;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    background-color: transparent;
+    border-radius: 8px;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    margin-top: 3%;
+}
+
+.selection>option{
+    font-family: 'Mukta', sans-serif;
+}
+
+.selection:active{
+    border: 1px solid darksalmon;
+}
+
+.textarea {
+    width: 95%;
+    height: auto;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    resize: vertical;
+    outline: none;
+    font-family: 'Mukta', sans-serif;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.textarea:focus:not(:placeholder-shown) {
+    border-color: darksalmon;
+}
+
+
+.input-type-label{
+    font-family: 'Mukta', sans-serif;
+}
+
+label{
+    font-family: 'Mukta', sans-serif;
+}
+
+.submit-btn{
+    background-color: darksalmon;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-weight: bolder;
+    padding: 5px 10px;
+    transition: transform 0.3s;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 20%;
+    margin-top: 2%;
+    margin-bottom: 10%;
+}
+
+.submit-btn:hover{
+    transform: scale(1.1);
+    transition-duration: 10ms;
+}
+
+.error-message{
+    font-family: 'Mukta', sans-serif;
+    color: rgb(190, 1, 1);
+    font-size: 1vw;
+}
+
+.edit-button {
+    background-color: darksalmon;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bolder;
+    padding: 5px 10px;
+    transition: transform 0.3s;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 2%;
+    font-size: 1.1vw;
+    margin-bottom: 1%;
+}
+
+.edit-button:hover{
+    transform: scale(1.1);
+}
+
+.checkbox-label{
+    font-family: 'Mukta', sans-serif;
+    font-size: 80%;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .question-label {
+       font-size: 15px;
+    }
+
+    .form-title-container{
+        font-size: 20px;
+        height: 8vw;
+    }
+
+    #doc_logo{
+        height: 3vw;
+        width: 3vw;
+        margin-left: 3%;
+    }  
+
+    #edit-form-title{
+        height: 2vw;
+        width: 2vw;
+    }
+  }
